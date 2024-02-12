@@ -1,3 +1,85 @@
+:root {
+    --silver-color1: #747474;
+    --silver-color2: #fff;
+    --silver-color3: #aaaaaa;
+    --silver-color4: #a9a9a9;
+    --silver-color5: #ccc;
+    --silver-color6: #fff;
+    --silver-color7: #999;
+
+    --sun-color1: #ffffff;
+    --sun-color2: #ffd700;
+    --sun-color3: #ffcc00;
+    --sun-color4: #ff9900;
+    --sun-color5: #ff6600;
+    --sun-color6: #fe4f23;
+    --sun-color7: #ff3c00;
+    
+    --mercury-color1: var(--sun-color1);
+    --mercury-color2: #a8a8a8;
+    --mercury-color3: #d9d9d9;
+    --mercury-color4: #ffdf80;
+    --mercury-color5: #d9d9d9;
+    --mercury-color6: var(--mercury-color2);
+    --mercury-color7: var(--mercury-color1);
+
+    --venus-color1: var(--sun-color1);
+    --venus-color2: #ffe5b4;
+    --venus-color3: #ff9933;
+    --venus-color4: #ff8000;
+    --venus-color5: var(--venus-color3);
+    --venus-color6: var(--venus-color2);
+    --venus-color7: var(--venus-color1);
+
+    --earth-color1: #dfeeff;
+    --earth-color2: #436392;
+    --earth-color3: #4c9135;
+    --earth-color4: #004292;
+    --earth-color5: var(--earth-color3);
+    --earth-color6: #999;
+    --earth-color7: #fff;
+
+    --mars-color1: var(--sun-color1);
+    --mars-color2: #ff8000;
+    --mars-color3: #cc3300;
+    --mars-color4: #993300;
+    --mars-color5: var(--mars-color4);
+    --mars-color6: var(--mars-color2);
+    --mars-color7: var(--mars-color1);
+
+    --jupiter-color1: var(--sun-color1);
+    --jupiter-color2: #ffcc00;
+    --jupiter-color3: #ff9900;
+    --jupiter-color4: #cc6600;
+    --jupiter-color5: #996633;
+    --jupiter-color6: #663300;
+    --jupiter-color7: var(--jupiter-color1);
+
+    --saturn-color1: var(--sun-color1);
+    --saturn-color2: #d4b995;
+    --saturn-color3: #e4c999;
+    --saturn-color4: #fadfa4;
+    --saturn-color5: #f8d289;
+    --saturn-color6: #c3c3c3;
+    --saturn-color7: var(--saturn-color1);
+
+    --uranus-color1: var(--sun-color1);
+    --uranus-color2: #00ffff;
+    --uranus-color3: #007fff;
+    --uranus-color4: #0066cc;
+    --uranus-color5: #3366cc;
+    --uranus-color6: var(--sun-color1);
+    --uranus-color7: var(--sun-color1);
+
+    --neptune-color1: var(--sun-color1);
+    --neptune-color2: #0000ff;
+    --neptune-color3: #00008b;
+    --neptune-color4: #191970;
+    --neptune-color5: var(--neptune-color3);
+    --neptune-color6: var(--neptune-color2);
+    --neptune-color7: var(--neptune-color1);
+}
+
 body {
     font-family: Helvetica, sans-serif;
     color: #EAE8FF;
@@ -5,17 +87,18 @@ body {
     padding: 0 40px;    
 }
 
+
 h1{
     background: linear-gradient(
-    45deg,
-    #747474 5%,
-    #fff 10%,
-    #aaaaaa 30%,
-    #a9a9a9 50%,
-    #ccc 70%,
-    #fff 80%,
-    #999 95%
-  );
+        45deg,
+        var(--silver-color1) 5%,
+        var(--silver-color2) 10%,
+        var(--silver-color3) 30%,
+        var(--silver-color4) 50%,
+        var(--silver-color5) 70%,
+        var(--silver-color6) 80%,
+        var(--silver-color7) 95%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -31,15 +114,15 @@ h1{
   
 .card {
     background: linear-gradient(
-    135deg,
-    #999 5%,
-    #fff 10%,
-    #ccc 30%,
-    #ddd 50%,
-    #ccc 70%,
-    #fff 80%,
-    #999 95%
-  );
+        135deg,
+        var(--silver-color1) 5%,
+        var(--silver-color2) 10%,
+        var(--silver-color3) 30%,
+        var(--silver-color4) 50%,
+        var(--silver-color5) 70%,
+        var(--silver-color6) 80%,
+        var(--silver-color7) 95%
+    );
     text-align: center;
     border-radius: 5px;
     aspect-ratio: 5 / 7;
@@ -69,136 +152,125 @@ h1{
 }
 
 
+
+
+#Sun {
+    background: linear-gradient(
+        45deg,
+        var(--sun-color1) 5%,
+        var(--sun-color2) 10%,
+        var(--sun-color3) 30%,
+        var(--sun-color4) 50%,
+        var(--sun-color5) 70%,
+        var(--sun-color6) 80%,
+        var(--sun-color7) 95%
+    );
+}
+
 #Mercury {
     background: linear-gradient(
         45deg,
-        #ffffff 5%,
-        #a8a8a8 10%,
-        #d9d9d9 30%,
-        #ffdf80 50%,
-        #d9d9d9 70%,
-        #a8a8a8 80%,
-        #ffffff 95%
+        var(--mercury-color1) 5%,
+        var(--mercury-color2) 10%,
+        var(--mercury-color3) 30%,
+        var(--mercury-color4) 50%,
+        var(--mercury-color5) 70%,
+        var(--mercury-color6) 80%,
+        var(--mercury-color7) 95%
     );
 }
 
 #Venus {
     background: linear-gradient(
         45deg,
-        #ffffff 5%,
-        #ffe5b4 10%,
-        #ff9933 30%,
-        #ff8000 50%,
-        #ff9933 70%,
-        #ffe5b4 80%,
-        #ffffff 95%
+        var(--venus-color1) 5%,
+        var(--venus-color2) 10%,
+        var(--venus-color3) 30%,
+        var(--venus-color4) 50%,
+        var(--venus-color5) 70%,
+        var(--venus-color6) 80%,
+        var(--venus-color7) 95%
     );
 }
 
-/*
-Mercury is 0.39 AU, 
-to Venus is 0.72 AU, 
-to Earth is 1.00 AU, 
-to Mars is 1.52 AU, 
-to Jupiter is 5.20 AU, 
-to Saturn is 9.54 AU, 
-to Uranus is 19.22 AU, 
-and to Neptune is 30.06 AU
-*/
-
-
-#Earth{
+#Earth {
     background: linear-gradient(
-    0deg,
-    #dfeeff 5%,
-    #436392 10%,
-    #4c9135 30%,
-    #004292 50%,
-    #4c9135 70%,
-    #999 80%,
-    #fff 95%
-  );
+        0deg,
+        var(--earth-color1) 5%,
+        var(--earth-color2) 10%,
+        var(--earth-color3) 30%,
+        var(--earth-color4) 50%,
+        var(--earth-color5) 70%,
+        var(--earth-color6) 80%,
+        var(--earth-color7) 95%
+    );
 }
-
 
 #Mars {
     background: linear-gradient(
         45deg,
-        #ffffff 5%,
-        #ff8000 10%,
-        #cc3300 30%,
-        #993300 50%,
-        #993300 70%,
-        #ff8000 80%,
-        #ffffff 95%
+        var(--mars-color1) 5%,
+        var(--mars-color2) 10%,
+        var(--mars-color3) 30%,
+        var(--mars-color4) 50%,
+        var(--mars-color5) 70%,
+        var(--mars-color6) 80%,
+        var(--mars-color7) 95%
     );
 }
 
 #Jupiter {
     background: linear-gradient(
         45deg,
-        #ffffff 5%,
-        #ffcc00 10%,
-        #ff9900 30%,
-        #cc6600 50%,
-        #996633 70%,
-        #663300 80%,
-        #ffffff 95%
+        var(--jupiter-color1) 5%,
+        var(--jupiter-color2) 10%,
+        var(--jupiter-color3) 30%,
+        var(--jupiter-color4) 50%,
+        var(--jupiter-color5) 70%,
+        var(--jupiter-color6) 80%,
+        var(--jupiter-color7) 95%
     );
 }
 
 #Saturn {
     background: linear-gradient(
         45deg,
-        #ffffff 5%,
-        #d4b995 10%,
-        #e4c999 30%,
-        #fadfa4 50%,
-        #f8d289 70%,
-        #c3c3c3 80%,
-        #ffffff 95%
+        var(--saturn-color1) 5%,
+        var(--saturn-color2) 10%,
+        var(--saturn-color3) 30%,
+        var(--saturn-color4) 50%,
+        var(--saturn-color5) 70%,
+        var(--saturn-color6) 80%,
+        var(--saturn-color7) 95%
     );
 }
 
 #Uranus {
     background: linear-gradient(
         45deg,
-        #ffffff 5%,
-        #00ffff 10%,
-        #007fff 30%,
-        #0066cc 50%,
-        #3366cc 70%,
-        #ffffff 80%,
-        #ffffff 95%
+        var(--uranus-color1) 5%,
+        var(--uranus-color2) 10%,
+        var(--uranus-color3) 30%,
+        var(--uranus-color4) 50%,
+        var(--uranus-color5) 70%,
+        var(--uranus-color6) 80%,
+        var(--uranus-color7) 95%
     );
 }
 
 #Neptune {
     background: linear-gradient(
         45deg,
-        #ffffff 5%,
-        #0000ff 10%,
-        #00008b 30%,
-        #191970 50%,
-        #00008b 70%,
-        #0000ff 80%,
-        #ffffff 95%
+        var(--neptune-color1) 5%,
+        var(--neptune-color2) 10%,
+        var(--neptune-color3) 30%,
+        var(--neptune-color4) 50%,
+        var(--neptune-color5) 70%,
+        var(--neptune-color6) 80%,
+        var(--neptune-color7) 95%
     );
 }
 
-
-#Sun {
-    background: linear-gradient(
-        45deg,
-        #ffffff 5%,
-        #ffd700 10%,
-        #ffcc00 30%,
-        #ff9900 50%,
-        #ff6600 70%,
-        #fe4f23 80%,
-        #ff3c00 95%
-    );
-}
 
 
 .card:hover{
