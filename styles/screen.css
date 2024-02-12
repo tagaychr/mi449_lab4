@@ -1,19 +1,17 @@
 body {
     font-family: Helvetica, sans-serif;
     color: #EAE8FF;
-    background: #2D3142;
-    padding: 0 40px;
-    text-align: center;
-    
+    background: #000622;
+    padding: 0 40px;    
 }
 
 h1{
     background: linear-gradient(
     45deg,
-    #999 5%,
+    #747474 5%,
     #fff 10%,
-    #ccc 30%,
-    #ddd 50%,
+    #aaaaaa 30%,
+    #a9a9a9 50%,
     #ccc 70%,
     #fff 80%,
     #999 95%
@@ -33,7 +31,7 @@ h1{
   
 .card {
     background: linear-gradient(
-    45deg,
+    135deg,
     #999 5%,
     #fff 10%,
     #ccc 30%,
@@ -43,40 +41,166 @@ h1{
     #999 95%
   );
     text-align: center;
-    padding: 100px 0;
-    /*width: 100%;*/
-    padding-bottom: 140%;
     border-radius: 5px;
-    
+    aspect-ratio: 5 / 7;
+
 }
 
 .Sun {
     grid-row-start:1;
     grid-row-end:3;
     grid-column: span 2;
-    padding-top: 200px;
+    aspect-ratio: inherit;
 }
 
 .planetImage{
     background-color: #ffffff; /* White background */
     border-radius: 50%; /* Create circle */
+    width: 60%; /* Set width relative to parent */
+    height: 45%; /* Set height relative to parent */
+    margin: auto;
+    margin-top: 40px;
+}
+
+.Sun .planetImage{
     width: 80%; /* Set width relative to parent */
-    height: 150%; /* Set height relative to parent */
-    margin: auto;
+    height: 50%; /* Set height relative to parent */
+    margin-top: 100px;
 }
 
-.planetDetails{
-    width: 80%;
-    height: 100%;
-    margin: auto;
+
+#Mercury {
+    background: linear-gradient(
+        45deg,
+        #ffffff 5%,
+        #a8a8a8 10%,
+        #d9d9d9 30%,
+        #ffdf80 50%,
+        #d9d9d9 70%,
+        #a8a8a8 80%,
+        #ffffff 95%
+    );
 }
 
-.card.Sun .planetImage{
-    background-color: #ffffff; /* White background */
-    border-radius: 50%; /* Create circle */
-    width: 100%; /* Set width relative to parent */
-    height: 100%; /* Set height relative to parent */
-    margin: auto;
-    
+#Venus {
+    background: linear-gradient(
+        45deg,
+        #ffffff 5%,
+        #ffe5b4 10%,
+        #ff9933 30%,
+        #ff8000 50%,
+        #ff9933 70%,
+        #ffe5b4 80%,
+        #ffffff 95%
+    );
 }
 
+/*
+Mercury is 0.39 AU, 
+to Venus is 0.72 AU, 
+to Earth is 1.00 AU, 
+to Mars is 1.52 AU, 
+to Jupiter is 5.20 AU, 
+to Saturn is 9.54 AU, 
+to Uranus is 19.22 AU, 
+and to Neptune is 30.06 AU
+*/
+
+
+#Earth{
+    background: linear-gradient(
+    0deg,
+    #dfeeff 5%,
+    #436392 10%,
+    #4c9135 30%,
+    #004292 50%,
+    #4c9135 70%,
+    #999 80%,
+    #fff 95%
+  );
+}
+
+
+#Mars {
+    background: linear-gradient(
+        45deg,
+        #ffffff 5%,
+        #ff8000 10%,
+        #cc3300 30%,
+        #993300 50%,
+        #993300 70%,
+        #ff8000 80%,
+        #ffffff 95%
+    );
+}
+
+#Jupiter {
+    background: linear-gradient(
+        45deg,
+        #ffffff 5%,
+        #ffcc00 10%,
+        #ff9900 30%,
+        #cc6600 50%,
+        #996633 70%,
+        #663300 80%,
+        #ffffff 95%
+    );
+}
+
+#Saturn {
+    background: linear-gradient(
+        45deg,
+        #ffffff 5%,
+        #d4b995 10%,
+        #e4c999 30%,
+        #fadfa4 50%,
+        #f8d289 70%,
+        #c3c3c3 80%,
+        #ffffff 95%
+    );
+}
+
+#Uranus {
+    background: linear-gradient(
+        45deg,
+        #ffffff 5%,
+        #00ffff 10%,
+        #007fff 30%,
+        #0066cc 50%,
+        #3366cc 70%,
+        #ffffff 80%,
+        #ffffff 95%
+    );
+}
+
+#Neptune {
+    background: linear-gradient(
+        45deg,
+        #ffffff 5%,
+        #0000ff 10%,
+        #00008b 30%,
+        #191970 50%,
+        #00008b 70%,
+        #0000ff 80%,
+        #ffffff 95%
+    );
+}
+
+
+#Sun {
+    background: linear-gradient(
+        45deg,
+        #ffffff 5%,
+        #ffd700 10%,
+        #ffcc00 30%,
+        #ff9900 50%,
+        #ff6600 70%,
+        #fe4f23 80%,
+        #ff3c00 95%
+    );
+}
+
+
+.card:hover{
+    transform: translateY(-15px); /* Moves the element up by 5 pixels */
+}
