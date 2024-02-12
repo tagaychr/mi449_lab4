@@ -4,47 +4,79 @@ body {
     background: #2D3142;
     padding: 0 40px;
     text-align: center;
+    
 }
 
-nav {
-    margin: 40px auto 0 auto;
-    width: 250px;
-    border-radius: 50px;
-    background: #212431;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    list-style-type: none;
-    margin: 0;
-}
-
-nav ul li a {
-    display: inline-block;
-    padding: 20px;
-    color: #EAE8FF;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-h1 {
-    font-size: 8em;
-    letter-spacing: -2px;
-}
-
-h1 strong {
-    background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+h1{
+    background: linear-gradient(
+    45deg,
+    #999 5%,
+    #fff 10%,
+    #ccc 30%,
+    #ddd 50%,
+    #ccc 70%,
+    #fff 80%,
+    #999 95%
+  );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-img.about {
-    opacity: 0.5;
+.cards {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 10px;
+    padding: 10px;
+    color: #2D3142;
+    font-size: 1vw;
 }
+  
+.card {
+    background: linear-gradient(
+    45deg,
+    #999 5%,
+    #fff 10%,
+    #ccc 30%,
+    #ddd 50%,
+    #ccc 70%,
+    #fff 80%,
+    #999 95%
+  );
+    text-align: center;
+    padding: 100px 0;
+    /*width: 100%;*/
+    padding-bottom: 140%;
+    border-radius: 5px;
+    
+}
+
+.Sun {
+    grid-row-start:1;
+    grid-row-end:3;
+    grid-column: span 2;
+    padding-top: 200px;
+}
+
+.planetImage{
+    background-color: #ffffff; /* White background */
+    border-radius: 50%; /* Create circle */
+    width: 80%; /* Set width relative to parent */
+    height: 150%; /* Set height relative to parent */
+    margin: auto;
+}
+
+.planetDetails{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.card.Sun .planetImage{
+    background-color: #ffffff; /* White background */
+    border-radius: 50%; /* Create circle */
+    width: 100%; /* Set width relative to parent */
+    height: 100%; /* Set height relative to parent */
+    margin: auto;
+    
+}
+
